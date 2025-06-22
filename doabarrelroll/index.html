@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do A Barrel Roll</title>
+  <meta name="description" content="Discover the fun 'do a barrel roll' Easter egg hidden in search engine. Click on do a barrel roll x200 or do a barrel roll 20 times and watch the entire page perform a barrel roll animation.">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5642226223544944"
+     crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/fevicon.png">
+  <meta name="google-site-verification" content="RPA3RoD2UDMfO8y0aKi0sGXf9HrSFf18CBetbS58P10" />
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #5f6368;
+            --button-bg: #f8f9fa;
+            --button-border: transparent;
+            --button-hover: #f0f0f0;
+            --right-link-color: #5f6368;
+            --right-button-bg: #4285f4;
+            --right-button-hover: #f0f0f0;
+        }
+
+        .dark-mode {
+            --bg-color: #202124;
+            --text-color: #e8eaed;
+            --button-bg: #303134;
+            --button-border: 1px solid #e8eaed;
+            --button-hover: #3c3e41;
+            --right-link-color: #e8eaed;
+            --right-button-bg: #8ab4f8;
+            --right-button-hover: #3c3e41;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Google Logo */
+        .logo {
+    background: url("/Logo.png") no-repeat;
+    background-size: contain;
+    height: 92px;
+    width: 100%;
+    max-width: 572px;
+    margin: 0 auto;
+    margin-top: 116px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 72px;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 52px;
+        margin-top: 60px;
+    }
+}
+
+        /* Search Box */
+        .search-box {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid var(--text-color);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input[type="text"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding-left: 10px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .button {
+            background-color: var(--button-bg);
+            border: var(--button-border);
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 10px;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .button:hover {
+            background-color: var(--button-hover);
+        }
+
+        /* Barrel Roll Animation */
+        @keyframes barrelRoll {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        body.barrel-roll {
+            animation: barrelRoll 2s linear infinite;
+        }
+
+        /* Right top corner links */
+        .right-links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .right-links button {
+            background-color: var(--right-button-bg);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .right-links button:hover {
+            background-color: var(--right-button-hover);
+        }
+
+        .info {
+            color: var(--text-color);
+            font-family: Arial, Helvetica, sans-serif;
+          padding-left:10px;
+          padding-right:10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .logo {
+                margin-top: 80px;
+            }
+
+            .search-box {
+                width: 90%;
+                max-width: 400px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="right-links">
+        <img src="/apps-icon.png" alt="Girl in a jacket" width="34" height="34">
+        <button class="dark-mode-btn">Dark Mode</button>
+    </div>
+    <div class="logo"></div>
+    <form class="search-box" action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" title="Search" aria-label="Search" autofocus>
+    </form>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="button">Google Search</button>
+        <button class="button">I'm Feeling Lucky</button>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="button" onclick="rotatePage(10)">10 Times</button>
+        <button class="button" onclick="rotatePage(20)">20 Times</button>
+        <button class="button" onclick="rotatePage(50)">50 Times</button>
+        <button class="button" onclick="rotatePage(100)">100 Times</button>
+        <button class="button" onclick="rotatePage(1000)">1000 Times</button>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="button" onclick="rotatePageslow(50)">Slow</button>
+        <button class="button" onclick="rotatePageslow(200)">More Slow</button>
+        <button class="button" onclick="rotatePageslow(1000)">Very Slow</button>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="button" onclick="rotatePagefast(50)">Fast</button>
+        <button class="button" onclick="rotatePagefast(20)">More Fast</button>
+        <button class="button" onclick="rotatePagefast(5)">Very Fast</button>
+    </div>
+    <br>
+    <div style="text-align: center; margin-top: 20px;" class="info">
+        <p><strong>Note!</strong> Reload the page if any button does not work or if you need to stop the barrel roll.</p>
+    </div>
+    <script>
+        function rotatePage(times) {
+            document.body.classList.remove('barrel-roll');
+            if (times > 0) {
+                document.body.style.animation = `barrelRoll 2s linear ${Math.ceil(times)} forwards`;
+                setTimeout(function() {
+                    document.body.classList.remove('barrel-roll');
+                }, 2000);
+            }
+        }
+    </script>
+    <script>
+        function rotatePageslow(times) {
+            document.body.classList.remove('barrel-roll'); // Remove existing barrel roll animation
+            if (times > 0) {
+                document.body.style.animation = `barrelRoll ${times}s linear ${Math.ceil(times / 2)} forwards`;
+                setTimeout(function() {
+                    document.body.classList.remove('barrel-roll'); // Remove animation class after animation ends
+                }, times * 1000);
+            }
+        }
+    </script>
+    <script>
+        function rotatePagefast(times) {
+            document.body.classList.remove('barrel-roll'); // Remove existing barrel roll animation
+            if (times > 0) {
+                // Calculate the animation duration dynamically based on the number of times
+                // Adjust the factor (e.g., 100) to control the speed
+                var duration = Math.sqrt(times) * 100; // Adjust the factor as needed
+
+                document.body.style.animation = `barrelRoll ${duration}ms linear ${Math.ceil(times)} forwards`;
+                setTimeout(function() {
+                    document.body.classList.remove('barrel-roll'); // Remove animation class after animation ends
+                }, duration);
+            }
+        }
+    </script>
+    <script>
+        // Dark mode functionality
+        const darkModeBtn = document.querySelector('.dark-mode-btn');
+        const body = document.body;
+
+        darkModeBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    <style>
+        /* Barrel Roll Animation */
+        @keyframes barrelRoll {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        body.barrel-roll {
+            animation: none;
+        }
+    </style>
+</body>
+
+</html>
